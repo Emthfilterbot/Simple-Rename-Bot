@@ -1,0 +1,23 @@
+services:
+  - type: web
+    plan: free
+    name: Simple-Rename-Bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 bot.py
+    repo: https://github.com/Emthfilterbot/Simple-Rename-Bot/tree/main.git      
+    branch: main
+    envVars:
+      - key: API_ID
+        sync: true
+      - key: API_HASH
+        sync: true
+      - key: BOT_TOKEN
+        sync: true
+      - key: ADMINS
+        sync: true
+      - key: CAPTION
+        sync: false
+      - key: THUMBNAIL
+        sync: false
+    autoDeploy: false
