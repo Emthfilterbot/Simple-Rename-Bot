@@ -9,13 +9,13 @@ services:
     branch: main
     envVars:
       - key: API_ID
-        sync: true
+        sync: false
       - key: API_HASH
-        sync: true
+        sync: false
       - key: BOT_TOKEN
-        sync: true
+        sync: false
       - key: ADMINS
-        sync: true
+        sync: false
       - key: CAPTION
         sync: false
       - key: THUMBNAIL
